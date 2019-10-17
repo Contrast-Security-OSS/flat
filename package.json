@@ -2,7 +2,6 @@
   "name": "@contrast/flat",
   "version": "4.1.0",
   "main": "index.js",
-  "bin": "cli.js",
   "scripts": {
     "test": "mocha -u tdd --reporter spec && standard index.js test/index.js"
   },
@@ -14,9 +13,6 @@
   },
   "directories": {
     "test": "test"
-  },
-  "dependencies": {
-    "is-buffer": "~2.0.3"
   },
   "repository": {
     "type": "git",

@@ -1,5 +1,5 @@
 {
-  "name": "flat",
+  "name": "@contrast/flat",
   "version": "4.1.0",
   "main": "index.js",
   "bin": "cli.js",
@@ -22,16 +22,8 @@
     "type": "git",
     "url": "git://github.com/hughsk/flat.git"
   },
-  "keywords": [
-    "flat",
-    "json",
-    "flatten",
-    "unflatten",
-    "split",
-    "object",
-    "nested"
-  ],
-  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com)",
+  "keywords": [],
+  "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com) - modified by Contrast Security",
   "bugs": {
     "url": "https://github.com/hughsk/flat/issues"
   },

@@ -15,6 +15,7 @@ function flatten(target, opts) {
   opts = opts || {};
 
   const delimiter = opts.delimiter || '.';
+  const maxDepth = opts.maxDepth;
   const output = {};
 
   function step(object, prev, currentDepth) {
@@ -31,10 +32,11 @@ function flatten(target, opts) {
 
       if (
         !isArray &&
-          !isBuffer &&
-          isObject &&
-          Object.keys(value).length &&
-          !isDomain
+        !isBuffer &&
+        isObject &&
+        Object.keys(value).length &&
+        !isDomain &&
+        (!opts.maxDepth || currentDepth < maxDepth)
       ) {
         return step(value, newKey, currentDepth + 1);
       }

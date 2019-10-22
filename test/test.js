@@ -1,8 +1,7 @@
 /* globals suite test */
 
 var assert = require('assert')
-var flat = require('../index')
-var flatten = flat.flatten
+var flatten = require('../index')
 
 var primitives = {
   String: 'good morning',
